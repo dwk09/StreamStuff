@@ -1,0 +1,71 @@
+element.style {
+    background: rgb(0, 0, 0);
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: #000000;
+    color: #fafafa;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.6);
+    display: block;
+    margin: 8px;
+}
+
+.name {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.meta {
+    display: block;
+    line-height: 1em;
+}
+
+.badge {
+    float: right;
+    padding-left: 5px;
+    height: 0.8em;
+}
+
+#log {
+    font: 600 20px "Open Sans";
+    display: table;
+    position: colulmn-reverse;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 10px 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    table-layout: fixed;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.1em;
+    background-size: contain;
+}
+
+.message {
+    word-wrap: break-word;
+    line-height: 1.5em;
+}
+
+#log>div {
+    margin-bottom: 5px;
+    background: linear-gradient(rgba(70, 70, 70, 0.6), rgba(50, 50, 50, 0.7));
+    padding: 5px 10px 10px;
+    animation: flipInX 500ms ease, fadeOutUp 1s ease 30000ms forwards;
+    -webkit-animation: flipInX 500ms ease, fadeOutUp 1s ease 30000ms forwards;
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
